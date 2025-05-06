@@ -1,12 +1,29 @@
 using System;
+class Circle{
+    private double _radius;
 
+    public void SetRadius (double radius)
+    {
+        if (radius < 0)
+        {
+            Console.WriteLine ("error");
+            return;
+        }
+        _radius=radius;
+    }
+
+    public double GetRadius ()
+    {
+        return _radius;
+    }
+}
 class Program
 {
 
-    static double AddNumbers(double a, double b)
-    {
-        return a + b;
-    }
+    // static double AddNumbers(double a, double b)
+    // {
+    //     return a + b;
+    // }
 
     static void Main(string[] args)
     {
@@ -39,7 +56,14 @@ class Program
         //     Console.WriteLine(i);
         // }
 
-        double total = AddNumbers(1233, 457);
-        Console.WriteLine(total);
+        // double total = AddNumbers(1233, 457);
+        // Console.WriteLine(total);
+
+
+
+
+
+        
+
     }
 }
