@@ -250,5 +250,18 @@
             "problemMatcher": "$msCompile"
         },
 
+        {
+            "label": "word-Counter",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/wordCounter/wordCounter.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+
     ]
 }

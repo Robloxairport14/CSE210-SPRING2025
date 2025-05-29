@@ -250,5 +250,18 @@
             "stopAtEntry": false
         },
 
+        {
+            "name": "Word Counter (Exercise)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-wordCounter",
+            "program": "${workspaceFolder}/wordCounter/bin/Debug/net8.0wordCount.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/wordCounter",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+
     ]
 }
