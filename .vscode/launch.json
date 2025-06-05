@@ -263,5 +263,18 @@
             "stopAtEntry": false
         },
 
+        {
+            "name": "Person (Exercise)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-Person",
+            "program": "${workspaceFolder}/Person/bin/Debug/net8.0wordCount.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Person",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+
     ]
 }
