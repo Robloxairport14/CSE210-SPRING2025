@@ -1,4 +1,6 @@
-﻿class Program
+﻿using System.ComponentModel.DataAnnotations;
+
+class Program
 {
     static void Main(string[] args)
     {
@@ -13,5 +15,22 @@
         Doctor myDoctor = new Doctor("John", "Doe", 45);
         Console.WriteLine(myDoctor.GetDoctorInformation());
 
+        List<Person> myPeople = new List<Person>();
+        myPeople.Add(myPerson);
+        myPeople.Add(myPoliceMan);
+        myPeople.Add(myDoctor);
+        
+
+        foreach (Person person in myPeople)
+        {
+            DisplayPersonInformation(person);
+        }
+
     }
+
+    private static void DisplayPersonInformation(Person person)
+    {
+        Console.WriteLine(person.getpersoninformation());
+    }
+
 }
